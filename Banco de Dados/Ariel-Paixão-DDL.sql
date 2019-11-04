@@ -5,7 +5,7 @@ use Ariel_Paixao_LanHouseSAEP;
 create table Usuarios(
 	Id int identity primary key,
 	Email varchar(255) not null unique,
-	Senha varchar(255) not null unique
+	Senha varchar(255) not null
 );
 
 create table TiposDefeitos(
