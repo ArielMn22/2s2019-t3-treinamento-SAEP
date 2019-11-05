@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -17,8 +19,11 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav style="background-color:#0085C7" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
+            <div class="navbar-left">
+                <img style="height:50px;margin-right:20px" src="~/images/rocketz.png" />
+            </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -26,21 +31,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Ariel.Paixao.Web.Razor</a>
+                <a asp-area="" class="navbar-brand" style="color:#f4c300">Ariel.Paixao.Web.Razor</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
+
+            @if (Context.Session.GetString("email") != null)
+            {
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        @*<li><a asp-area="" asp-controller="Login" asp-action="Create" style="color:#314659">Home</a></li>*@
+                        <li><a asp-area="" asp-controller="RegistroDefeitos" asp-action="Index" style="color:#fff">Registro de Defeitos</a></li>
+                        <li><a asp-area="" asp-controller="Login" asp-action="Create" style="color:#fff">Sair</a></li>
+                    </ul>
+                </div>
+            }
         </div>
     </nav>
 
     <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
+    <div style="background-color:#009f3d" class="container body-content">
         @RenderBody()
         <hr />
         <footer>

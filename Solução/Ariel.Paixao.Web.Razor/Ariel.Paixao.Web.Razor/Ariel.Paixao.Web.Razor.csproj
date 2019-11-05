@@ -16,4 +16,10 @@
     <Folder Include="Contextos\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\images\rocketz.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

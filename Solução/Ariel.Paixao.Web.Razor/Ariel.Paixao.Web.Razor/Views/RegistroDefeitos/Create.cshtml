@@ -1,0 +1,52 @@
+﻿@model Ariel.Paixao.Web.Razor.Dominios.RegistroDefeitos
+
+@{
+    ViewData["Title"] = "Cadastrar Defeito";
+}
+
+<h2>Cadastrar Defeito</h2>
+
+<h4>Registro de Defeitos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        @if (ViewBag.Mensagem != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @Html.Raw(ViewBag.Mensagem);
+            </div>
+        }
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DataChamado" class="control-label">Data do chamado</label>
+                <input asp-for="DataChamado" class="form-control" />
+                <span asp-validation-for="DataChamado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdTipoEquipamento" class="control-label">Tipo do equipamento</label>
+                <select asp-for="IdTipoEquipamento" class ="form-control" asp-items="ViewBag.IdTipoEquipamento"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdTipoDefeito" class="control-label">Tipo do defeito</label>
+                <select asp-for="IdTipoDefeito" class ="form-control" asp-items="ViewBag.IdTipoDefeito"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label">Descrição</label>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-primary" asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

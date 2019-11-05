@@ -27,7 +27,6 @@ C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.
 C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Ariel.Paixao.Web.Razor.pdb
 C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Ariel.Paixao.Web.Razor.csproj.CopyComplete
 C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\Login\Create.g.cshtml.cs
-C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\Login\Delete.g.cshtml.cs
-C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\Login\Details.g.cshtml.cs
-C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\Login\Edit.g.cshtml.cs
-C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\Login\Index.g.cshtml.cs
+C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\RegistroDefeitos\Create.g.cshtml.cs
+C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\obj\Debug\netcoreapp2.1\Razor\Views\RegistroDefeitos\Index.g.cshtml.cs
+C:\Users\33747821839\Documents\Ariel\2s2019-t3-treinamento-SAEP\Solução\Ariel.Paixao.Web.Razor\Ariel.Paixao.Web.Razor\bin\Debug\netcoreapp2.1\wwwroot\images\rocketz.png
